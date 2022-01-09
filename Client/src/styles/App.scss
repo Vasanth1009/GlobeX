@@ -1,0 +1,99 @@
+.layout {
+  min-height: 100vh;
+
+  .header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    z-index: 10;
+    background-color: white;
+
+    .header-button {
+      width: 250px;
+      display: flex;
+      justify-content: space-around;
+      cursor: pointer;
+    }
+  }
+
+  .button {
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 20px;
+  }
+
+  .content {
+    margin-top: 50px;
+    padding: 0 100px;
+    background-color: white;
+
+    .home {
+      .home-left {
+        margin-top: 150px;
+      }
+
+      .logo-name {
+        color: #0d8bfc;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .url-input {
+        border: 3px solid #0d8bfc;
+        width: 650px;
+        padding: 13px;
+        outline: none;
+        font-size: 18px;
+      }
+
+      .url-button {
+        font-weight: 700;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        border: none;
+        padding: 30px;
+        border-radius: 0;
+      }
+    }
+
+    .dashboard {
+      margin: 0 150px;
+      margin-top: 80px;
+    }
+
+    .pane {
+      border-radius: 3px;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 30px 0;
+    }
+
+    .url-header-pane {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .counter-pane {
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 100px;
+
+      .counter-pane-left {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
