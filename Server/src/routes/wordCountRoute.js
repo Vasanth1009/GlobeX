@@ -9,7 +9,7 @@ import {
 
 const router = express.Router();
 
-router.get('/', getWordCounts);
+router.get('/:id', getWordCounts);
 router.post('/', createWordCount);
 router.put('/:id', updateWordCount);
 router.delete('/:id', deleteWordCount);

@@ -31,11 +31,7 @@ function Home() {
         )
       ) {
         await axios
-          .get(webUrl, {
-            headers: {
-              'Access-Control-Allow-Origin': '*',
-            },
-          })
+          .get(webUrl)
           .then((response) => {
             const words = response.data.replace(/[^A-Za-z']+/g, ' ').trim();
             const totalwords = words.split(' ').filter((word) => word !== '');

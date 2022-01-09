@@ -2,9 +2,9 @@ import axios from '../helpers/http-client';
 import ActionTypes from './types';
 
 const url = '/wordCount';
-export const getWordCounts = () => async (dispatch) => {
+export const getWordCounts = (id) => async (dispatch) => {
   try {
-    const { data } = await axios.get(url);
+    const { data } = await axios.get(`${url}/${id}`);
     data.wordCounts.reverse();
     if (data.success) {
       dispatch({

@@ -2,7 +2,7 @@ import WordCount from '../models/wordCount.js';
 
 export const getWordCounts = async (req, res) => {
   try {
-    const wordCounts = await WordCount.find();
+    const wordCounts = await WordCount.find({ userId: req.params.id });
     if (!wordCounts) {
       res.status(204).json({ success: true, wordCounts: null });
     } else {
